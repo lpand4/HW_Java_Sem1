@@ -1,7 +1,7 @@
 package HW_Java_Sem1;
 import java.util.Scanner;
 //+Написать программу вычисления n-ого треугольного числа. url
-public class program {
+public class Program {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число: ");
@@ -11,10 +11,12 @@ public class program {
         System.out.println();
         recTriangularNumber(userNum,1);
     }
+    
     public static int triangularNumber(int n) {
         int result = (n*(n+1))/2;       
         return result;        
     }
+    
     public static int recTriangularNumber(int n,int k) {
         int result;
         String msg = "";
